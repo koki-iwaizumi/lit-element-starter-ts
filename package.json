@@ -1,6 +1,6 @@
 {
   "name": "@koki-iwaizumi/lit-element-starter-ts",
-  "version": "1.1.0",
+  "version": "1.1.10",
   "description": "React Component Lib with Lit",
   "type": "module",
   "scripts": {
@@ -44,5 +44,7 @@
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/koki-iwaizumi"
-  }
+  },
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.ts"
 }
