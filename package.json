@@ -1,24 +1,22 @@
 {
   "name": "@koki-iwaizumi/lit-element-starter-ts",
-  "version": "1.1.10",
+  "version": "1.1.17",
   "description": "React Component Lib with Lit",
-  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc --watch",
-    "lint": "npm run lint:lit-analyzer && npm run lint:eslint",
-    "lint:eslint": "eslint 'src/**/*.ts'",
-    "lint:lit-analyzer": "lit-analyzer",
-    "format": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --ignore-path ./.eslintignore --write",
-    "serve": "wds --watch"
+    "build": "tsc"
   },
-  "keywords": [
-    "web-components",
-    "lit-element",
-    "typescript",
-    "lit"
-  ],
-  "author": "koki-iwaizumi <5434KO5434@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koki-iwaizumi/lit-element-starter-ts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koki-iwaizumi/lit-element-starter-ts/issues"
+  },
+  "homepage": "https://github.com/koki-iwaizumi/lit-element-starter-ts#readme",
   "dependencies": {
     "@lit-labs/react": "^1.0.1",
     "lit": "^2.0.0"
@@ -37,14 +35,9 @@
     "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "typescript": "^4.3.5"
-  },
-  "peerDependencies": {
-    "react": "^17.0.2"
+    "typescript": "^4.5.4"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/koki-iwaizumi"
-  },
-  "types": "./dist/index.d.ts",
-  "main": "./dist/index.ts"
+  }
 }

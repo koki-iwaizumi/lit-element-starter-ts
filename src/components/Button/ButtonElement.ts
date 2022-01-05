@@ -21,14 +21,16 @@ export class ButtonElement extends LitElement {
     }
   `;
 
-  @property()
-  name = '';
+  @property() name = '';
 
   override render() {
-    return html`<button @click=${this._clickButton}>${this.name}</button>`;
+    return html`<button @click=${this._click}>${this.name}</button>`;
   }
 
-  private _clickButton() {
-    console.log('ボタンがクリックされました');
+  private _click() {
+    const options = {
+      detail: {message: 'click button element'},
+    };
+    this.dispatchEvent(new CustomEvent('onClickButton', options));
   }
 }
